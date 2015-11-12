@@ -1,4 +1,19 @@
-h1{
-font-weight: 600;
-color: blue;
+body{
+    margin: 0;
+    width: 100%;
+    background-color: #040404;
 }
+
+.main-container{
+    width: 1200px;
+    mim-height: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.header-container {
+    height: 100px;
+    width: 100%;
+    
+    
+    
