@@ -35,7 +35,7 @@ h1.logo{font-family: 'Adelle Sans',sans-serif;
     color: #b39964;
     font-size: 9.375em;
     position: fixed;
-    top: 20px;
+    top: 10px;
     
 }
 h2.tagline{font-family: 'Adelle Sans Regular',sans-serif;
@@ -50,6 +50,8 @@ h3.subscript{font-family: 'Adelle Sans Regular',sans-serif;
     color: #60534d;
     font-weight: 700;
     position: fixed;
+    top: 137px;
+    left: 290px;
     
 }
 /* Header & Navigation
@@ -64,19 +66,24 @@ header{padding: 2% 0%;
 
 header .Layer_40 {
   background-image: "images/Layer_40.png";
+  opacity: 0.831;
   position: fixed;
   left: 0px;
   top: 0px;
-  width: 1111px;
-  height: 229px;
+  width: 1127px;
+  height: 479px;
+  z-index: 186;
+/*.Layer_69 {
+  background-image: url("Layer 69.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1127px;
+  height: 479px;
   z-index: 186;
 }
 
-header .subscript{
-    display:block;
-    margin:0;
-    position: relative;
-    top: -70px;
+*/
 }
 
 .nav {
