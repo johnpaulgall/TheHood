@@ -30,6 +30,11 @@ body{font-family: 'Adelle Sans Regular',sans-serif;
 .nav a{
     color: #f4eedc
 }
+
+ul li a{
+    color: #f4eedc
+}
+
 h1.logo{font-family: 'Adelle Sans',sans-serif;
     font-weight: 700;
     color: #b39964;
@@ -61,6 +66,7 @@ header{padding: 2% 0%;
     height: 170px;
     width: 1260;
     background-color: black;
+    z-index: 250;
     
 }
 
@@ -71,8 +77,8 @@ header .Layer_40 {
   left: 0px;
   top: 0px;
   width: 1127px;
-  height: 479px;
-  z-index: 186;
+  height: 300px;
+  z-index: 100;
 /*.Layer_69 {
   background-image: url("Layer 69.png");
   position: absolute;
@@ -87,15 +93,23 @@ header .Layer_40 {
 }
 
 .nav {
-	display:inline-block;
-	float:left;
+	display:inline-flex;
 	margin-top:0px;
 }
 
-.nav a {
-	position:relative; 
+.nav a { 
     border-radius:0px;
-	display:block;
+	display:flex;
+	float:left;
+	margin:0px;
+	padding:22px 75.8px;
+	text-decoration:none;
+	transition:.2s ease-in-out;
+}
+
+.menu { 
+    border-radius:0px;
+	display:flex;
 	float:left;
 	margin:0px;
 	padding:22px 75.8px;
@@ -109,6 +123,12 @@ header .Layer_40 {
     font-weight: 700;
 }
 
+ul li a:hover{
+    color:#b39964;
+    font-weight: 700;
+}
+
+
 header .redbox {
     background-color: #6a1916;
     position: fixed;
@@ -117,12 +137,99 @@ header .redbox {
     width: 100%;
     height: 69px;
     z-index: 187;
+    filter: drop-shadow(10px 10px 20px #000000);
     
 }
 
+.drop,
+.drop ul,
+.drop li,
+.drop a{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
 
+}
 
-   
+.drop_features{
+    position:absolute; 
+    border-radius:0px;
+	margin:0px;
+	padding: 20px 50px;
+	text-decoration:none;
+	transition:.2s ease-in-out;
+    z-index: 201;
+}
+
+.drop_learn{
+    position:absolute; 
+    border-radius:0px;
+	display:table-column;
+	float:right;
+	margin:0px;
+    left: 190px; 
+	padding:22px 75.8px;
+	text-decoration:none;
+	transition:.2s ease-in-out;
+    z-index: 202;
+}
+
+.drop_events{
+    position:absolute; 
+    border-radius:0px;
+	display:table-column;
+	float:right;
+	margin:0px;
+    left: 400px; 
+	padding:22px 75.8px;
+	text-decoration:none;
+	transition:.2s ease-in-out;
+    z-index: 202;
+}
+.drop_reviews{
+    position:absolute; 
+    border-radius:0px;
+	display:table-column;
+	float:right;
+	margin:0px;
+    left: 600px; 
+	padding:22px 75.8px;
+	text-decoration:none;
+	transition:.2s ease-in-out;
+    z-index: 202;
+}
+
+.drop_hire_me{
+    position:absolute; 
+    border-radius:0px;
+	display:inline-block;
+	float:right;
+	margin:0px;
+    left: 800px; 
+	padding:22px 75.8px;
+	text-decoration:none;
+	transition:.2s ease-in-out;
+    z-index: 202;
+}
+
+/* drop menu animations*/
+
+.chalkboard:hover > a {
+    -webkit-transform: skewY(10deg);
+    transform: skewY(30deg);
+}
+
+.imgchalkboard{
+    position: fixed;
+    left: 0px;
+    top: 237px;
+    width: 100%;
+    height: 220px;
+    z-index: 187;
+
+}
+
     
 /* Images & Media
 ---------------------------------------*/
@@ -132,7 +239,7 @@ header .redbox {
     top: -75px;
     width: 100%;
     height: 100%;
-    z-index: 400;
+    z-index: 200;
     
 }
 /* Footer
