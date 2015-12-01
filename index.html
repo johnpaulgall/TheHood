@@ -15,15 +15,35 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="https://use.typekit.net/nth1cuy.js">         </script>
-  <script>try{Typekit.load({ async: true });}catch(e){}     </script>    
+  <!--<script src="https://use.typekit.net/nth1cuy.js">         </script>
+  <script>try{Typekit.load({ async: true });}catch(e){}     </script> -->
+
+<!-- js -->
+<script src="scripts/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
     
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">  
+<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">  
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -32,68 +52,112 @@
 </head>
 <body>
 <header class="main_nav">
-    <img src="images/Layer_40.png" class="Layer_40">
-    <div class="container">
-      <div class="eight columns">
-        <h1 class="logo">THE HOOD</h1>
-        <h3 class="subscript">Where the Food Industry comes to vent</h3>
+    <img src="images/Layer_40.png" class="Layer_40" alt="smoke">
+      <h1 id="logo">THE HOOD</h1>
+      <h3 class="subscript">Where the Food Industry comes to vent</h3>
+    <div class="redbox">
+      <div id="menu" class="nav">
+          <ul>
+            <li class="list1"><a href="#" class="rednav link1">Features</a>
+              <ul class="nav1">
+                  <li><a href="#" class="featured_Chef">Featured Chef</a></li>
+                  <li><a href="#" class="industry_News">Industry News</a></li>
+                  <li><a href="#" class="featured_Farm">Featured Farm</a></li>
+                  <li><a href="#" class="featured_Recipe">Featured Recipe</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li class="list2"><a href="#" class="rednav link2">Learn</a>
+              <ul class="nav2">
+                  <li><a href="#" class="teach_Me">Teach Me</a></li>
+                  <li><a href="#" class="workshops">Workshops</a></li>
+                  <li><a href="#" class="vendors">Vendors</a></li>
+                  <li><a href="#" class="recipe_archive">Recipe Archive</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li class="list3"><a href="#" class="rednav link3">Events</a>
+              <ul class="nav3">
+                  <li><a href="#" class="local">Local</a></li>
+                  <li><a href="#" class="popups">Pop ups</a></li>
+                  <li><a href="#" class="meet_ups">Meet ups</a></li>
+                  <li><a href="#" class="food_trucks">Food Trucks</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li class="list4"><a href="#" class="rednav link1">Reviews</a>
+              <ul class="nav4">
+                  <li><a href="#" class="don't_eat_it!">Don't eat it!</a></li>
+                  <li><a href="#" class="eat_it!">Eat it!</a></li>
+                  <li><a href="#" class="gear_reviews">Gear Reviews</a></li>
+                  <li><a href="#" class="review_customers">Review Customers</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li class="list5"><a href="#" class="rednav link1">Hire Me!</a>
+              <ul class="nav5">
+                  <li><a href="#" class="hire_me">Hire Me!</a></li>
+                  <li><a href="#" class="gigs">Gigs!</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li><a href="#" class="rednav">Sign Up</a></li>
+          </ul>
+          <ul>
+            <li><a href="#" class="rednav">Log in</a></li>
+          </ul>
       </div>
-    <div class="twelve columns">
-      <div class="redbox">
-          <div id="menu" class="nav">
-             <a href="#">Features</a>
-             <a href="#">Learn</a>
-             <a href="#">Events</a>
-             <a href="#">Reviews</a>
-             <a href="#">Hire Me!</a>
-             <a href="#">Sign Up</a>
-             <a href="#">Log in</a>
-          </div>
-      </div>
-    </div>
     </div>
 </header>
-<div class="chalkboard">
-  <ul class="drop_features">
-    <li><a href="#" class="Featured_Chef">Featured Chef</a></li>
-    <li><a href="#" class="Industry_News">Industry News</a></li>
-    <li><a href="#" class="Featured_Farm">Featured Farm</a></li>
-    <li><a href="#" class="Featured_Recipe">Featured Recipe</a></li>
-  </ul>
-  <ul class="drop_learn">
-    <li><a href="#" class="teach_Me">Teach Me</a></li>
-    <li><a href="#" class="workshops">Workshops</a></li>
-    <li><a href="#" class="vendors">Vendors</a></li>
-    <li><a href="#" class="recipe_archive">Recipe Archive</a></li>
-  </ul>
-  <ul class="drop_events">
-    <li><a href="#" class="local">Local</a></li>
-    <li><a href="#" class="popups">Pop ups</a></li>
-    <li><a href="#" class="meet_ups">Meet ups</a></li>
-    <li><a href="#" class="food_trucks">Food Trucks</a></li>
-  </ul>
-  <ul class="drop_reviews">
-    <li><a href="#" class="don't_eat_it!">Don't eat it!</a></li>
-    <li><a href="#" class="eat_it!">Eat it!</a></li>
-    <li><a href="#" class="gear_reviews">Gear Reviews</a></li>
-    <li><a href="#" class="review_customers">Review Customers</a></li>
-  </ul>
-  <ul class="drop_hire_me">
-    <li><a href="#" class="hire_me!">Hire Me!</a></li>
-    <li><a href="#" class="gigs!">Gigs!</a></li>
-  </ul>
-  <img class="imgchalkboard" src="images/chalkboard_black.png">    
-</div>
-
+<div class="chalkboard"></div>
 <div class="container main">
-    <div class="ten columns">
+    <div class="twelve columns">
         <h2 class="tagline">Where The Food Industry comes to vent</h2>
-    </div>
-        <img src="images/Knife_&_Cutting_Board.jpeg" class="hero">
+    </div>  
+<div id="content">
+</div>
+</div>
+<div class="hero">
+</div> 
+<div class="greybar">
+        <p class="midtext">A community resource for the Food Industry of <span class="phila">Philadelphia</span>.</p>
+    <h2 class="midtag1">Create</h2>
     
-</div>    
+    <h2 class="midtag2">Share</h2>
+    
+    <h2 class="midtag3">Learn</h2>
+
+</div>
+<span class="arrows">
+    <i class="fa fa-arrow-circle-o-right"></i>
+    <i class="fa fa-arrow-circle-o-right"></i>
+</span>
+<div class="rounded1">
+    <h3 class="bodytext1">Community</h3>
+    <i class="fa fa"></i>    
+</div>
+<div class="rounded2">
+    <h3 class="bodytext2">Learn</h3>
+    <i class="fa fa"></i>    
+</div>
+<div class="rounded3">
+    <h3 class="bodytext3">Share</h3>
+    <i class="fa fa"></i>    
+</div>
     
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- BEGIN: Fixed Footer -->
+<div id="footer_container">
+    <div id="footer">
+        Footer Content
+    </div>
+</div>
+<!-- END: Fixed Footer -->
 </body>
 </html>    
