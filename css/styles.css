@@ -426,7 +426,12 @@ header{
     height: 115px;
     background-color: black;
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+    background-size: cover;
+    z-index: 100;
+>>>>>>> master
 =======
     background-size: cover;
     z-index: 100;
@@ -446,6 +451,7 @@ header{
 
 header .Layer_40 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-image: "images/Layer_40.png";
 <<<<<<< Updated upstream
   opacity: 0.831;
@@ -463,6 +469,8 @@ header .Layer_40 {
   -o-transition: all 0.2s;
   transition: all 0.2s;
 =======
+=======
+>>>>>>> master
     background-image: url(../images/Layer_40.png);
     opacity: 0.831;
     background-size: contain;
@@ -478,6 +486,9 @@ header .Layer_40 {
     -ms-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 }
 
@@ -587,6 +598,7 @@ ul {
     margin: 0;
     height: 80px;
     z-index: 100;
+<<<<<<< HEAD
 }
 
 <<<<<<< HEAD
@@ -596,6 +608,10 @@ ul li a:hover{
 }
 
 =======
+>>>>>>> master
+=======
+}
+
 >>>>>>> master
 
 header .redbox {
@@ -982,6 +998,35 @@ header.smaller .chalkboard{
     
 >>>>>>> master
 >>>>>>> Stashed changes
+}
+
+.chalkboard {
+    background-image: url(../images/chalkboard_black.png);
+    background-size: cover;
+    position: absolute;
+    top: 67px;
+    width: 100%;
+    height: 0px;
+    filter: drop-shadow(20px 20px 20px #000000);
+    z-index: 80;
+    transition:.2s ease-in-out;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;   
+}
+
+.pig {
+    background-image: url(../images/pig.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    height:85%;
+    width: 85%;
+    top: 15px;
+    left: 1150px;
+    
 }
 
 .chalkboard {
