@@ -54,7 +54,7 @@ html {
 .greybar {
     background-color: #353430;
     position: absolute;
-    top: 760px;
+    top: 770px;
     width: 100%;
     height: 69px;
 }
@@ -67,7 +67,7 @@ html {
     font-family: "FontAwesome";
     color: rgb(219, 213, 197);
     line-height: 3;
-    top: 740px;
+    top: 750px;
     left: 1000px;
 }
 
@@ -146,11 +146,14 @@ html {
   border-radius: 50%;
   background-color: rgb(53, 52, 48);
   position: absolute;
-  left: 195px;
-  top: 8px;
   width: 45px;
   height: 45px;
   z-index: 32;
+}
+
+.E1 {
+  top: 8px;
+  left: 195px;
 }
 
 .gold2 {
@@ -161,6 +164,18 @@ html {
   z-index: 29;
 }
 
+.fa.fa-graduation-cap {
+  position: absolute;
+  color: rgb(219, 213, 197);
+  left: 3.5px;
+  top: 8px;
+}
+
+.E2 {
+  top: 8px;
+  left: 195px;
+}
+
 .gold3 {
   left: 580px;
   top: 1675px;
@@ -168,6 +183,19 @@ html {
   height: 58.86px;
   z-index: 29;
 }
+
+.fa.fa-share-square {
+  position: absolute;
+  color: rgb(219, 213, 197);
+  left: 9.5px;
+  top: 8px;
+}
+
+.E3 {
+  top: 8px;
+  left: 195px;
+}
+
 .bodytext {
   font-size: 30px;
   font-family: "Adelle Sans";
@@ -395,10 +423,14 @@ header{
     left: 0px;
     top: 0px;
     width: 100%;
-    height: 180px;
-    z-index: 100;
+    height: 115px;
     background-color: black;
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+    background-size: cover;
+    z-index: 100;
+>>>>>>> master
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -ms-transition: all 0.2s;
@@ -413,6 +445,7 @@ header{
 
 
 header .Layer_40 {
+<<<<<<< HEAD
   background-image: "images/Layer_40.png";
 <<<<<<< Updated upstream
   opacity: 0.831;
@@ -429,6 +462,23 @@ header .Layer_40 {
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
+=======
+    background-image: url(../images/Layer_40.png);
+    opacity: 0.831;
+    background-size: contain;
+    overflow: hidden;
+    position: fixed;
+    left: 0px;
+    top: -80px;
+    width: 1127px;
+    height: 250px;
+    background-size: cover;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+>>>>>>> master
 }
 
 <<<<<<< Updated upstream
@@ -445,6 +495,7 @@ header .nav a {
 	display:flex;
 	float:left;
 	margin:0px;
+    left: 20px;
 	padding:22px 76.74px;
 =======
 header .subscript{
@@ -519,27 +570,33 @@ header .subscript{
 .rednav:hover {
 	background-color:#000000;
 	color:#b39964;
-    /*font-weight: 700;*/
 
 }
 
 
 ul li a:hover{
     color:#b39964;
-    /*font-weight: 700;*/
+    font-weight: 700;
     
 }
 
-
-a{
-    white-space: nowrap;
+ul {
+    position: static;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 80px;
+    z-index: 100;
 }
 
+<<<<<<< HEAD
 ul li a:hover{
     color:#b39964;
     font-weight: 700;
 }
 
+=======
+>>>>>>> master
 
 header .redbox {
     background-color: #6a1916;
@@ -558,58 +615,50 @@ header .redbox {
 }
 
 
-
-ul,
-li,
-a{
-    outline: none;
-    list-style: none;
-    
-}
-
 .nav1 li a,
 .nav2 li a,
 .nav3 li a,
 .nav4 li a,
 .nav5 li a {
     padding-top: 0px;
+    height: 20px;
+    top: -20px
 }
 
-ul li ul {
+.nav1,.nav2,.nav3,.nav4,.nav5 {
     display: none;
 }
 
-.list1,.list2,.list3,.list4,.list5 {
-    height:85px;
- 
-}
 
-li.list1:hover .nav1 {
+
+ul:hover .nav1 {
     display: block;
 }
 
-li.list2:hover .nav2 {
+ul:hover .nav2 {
     display: block;
 }
 
-li.list3:hover .nav3 {
+ul:hover .nav3 {
     display: block;
 }
 
-li.list4:hover .nav4 {
+ul:hover .nav4 {
     display: block;
 }
 
-li.list5:hover .nav5 {
+ul:hover .nav5 {
     display: block;
+    
 }
 
 .nav1 {
-    position:fixed;
+    position:absolute;
     float:right;
     border-radius:0px;
+    margin: 0;
     left: -30px;
-    top: 237px;
+    top: 75px;
     z-index: 100;
 	text-decoration:none;
 	transition:.2s ease-in-out;
@@ -621,12 +670,12 @@ li.list5:hover .nav5 {
 }
 
 .nav2{
-    position:fixed; 
+    position:absolute; 
     border-radius:0px;
 	float:right;
 	margin:0px;
     left: 215px;
-    top: 250px;
+    top: 75px;
     z-index: 100;
 	text-decoration:none;
 	transition:.2s ease-in-out;
@@ -638,12 +687,12 @@ li.list5:hover .nav5 {
 }
 
 .nav3{
-    position:fixed; 
+    position:absolute; 
     border-radius:0px;
 	float:right;
 	margin:0px;
     left: 415px;
-    top: 250px;
+    top: 75px;
     z-index: 100;
 	text-decoration:none;
 	transition:.2s ease-in-out;
@@ -655,12 +704,12 @@ li.list5:hover .nav5 {
 }
 
 .nav4{
-    position:fixed; 
+    position:absolute; 
     border-radius:0px;
 	float:right;
 	margin:0px;
     left: 615px;
-    top: 250px;
+    top: 75px;
     z-index: 100;
 	text-decoration:none;
 	transition:.2s ease-in-out;
@@ -672,12 +721,12 @@ li.list5:hover .nav5 {
 }
 
 .nav5{
-    position:fixed; 
+    position:absolute; 
     border-radius:0px;
 	float:right;
 	margin:0px;
     left: 828px;
-    top: 250px;
+    top: 75px;
     z-index: 100;
 	text-decoration:none;
 	transition:.2s ease-in-out;
@@ -693,35 +742,33 @@ li.list5:hover .nav5 {
 ---------------------------------------*/
 
 header.smaller {
-    height: 75px;
+    height: 0px;
 }
 header.smaller h1#logo {
-    position: fixed;
-    top: 35px;
-    width: 170px;
-    height: 350px;
-    line-height: 200px;
-    left: 65px;
+    top: 40px;
+    left: 50px;
 }
 
 header.smaller .subscript{
     position: fixed;
     font-family: 'Adelle Sans Regular',sans-serif;
     font-size: 1.5625em;
-    color: #60534d;
+    color: rgb(219, 213, 197);
     font-weight: 700;
-    top: 73px;
-    left: 78px;
+    top: 75px;
+    left: 53px;
 }
 
 header.smaller nav a {
     height: 75px;
 }
 
-header.smaller .Layer_40{
-    height: 75px;
+header.smaller .Layer_40 {
+    position: fixed;
+    top: -20px;
+    height: 125px;
+    width: 100%;
 }
-
 
 header.smaller .redbox {
     position:fixed;
@@ -736,17 +783,13 @@ header.smaller .nav a {
 	margin:0px;
 	padding:12.5px 76.74px;
 	text-decoration:none;
-	transition:.2s ease-in-out;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
 }
 
-header.smaller .nav1{ 
+header.smaller .nav1{
     border-radius:0px;
-    top: 135px;
+	float:right;
+	margin:0px;
+    top: 40px;
 	text-decoration:none;
 	transition:.2s ease-in-out;
 }
@@ -756,7 +799,7 @@ header.smaller .nav2{
 	float:right;
 	margin:0px;
     left: 215px;
-    top: 150px;
+    top: 40px;
 	text-decoration:none;
 	transition:.2s ease-in-out;
 }
@@ -766,7 +809,7 @@ header.smaller .nav3{
 	float:right;
 	margin:0px;
     left: 415px;
-    top: 150px;
+    top: 40px;
 	text-decoration:none;
 	transition:.2s ease-in-out;
 }
@@ -775,7 +818,7 @@ header.smaller .nav4{
 	float:right;
 	margin:0px;
     left: 615px;
-    top: 150px;
+    top: 40px;
 	text-decoration:none;
 	transition:.2s ease-in-out;
 }
@@ -785,20 +828,31 @@ header.smaller .nav5{
 	float:right;
 	margin:0px;
     left: 828px;
-    top: 150px;
+    top: 40px;
 	text-decoration:none;
 	transition:.2s ease-in-out;
+}
+
+header.smaller .chalkboard{
+    background-image: url(../images/chalkboard_black.png);
+    position: absolute;
+    top: 48px;
+    width: 100%;
+    height: 0px;
+    transition:.2s ease-in-out;
 }
 
 /* drop menu animations*/
 
 .chalkboard {
-background-color:blue;
-
+    
 }
 
-header.redbox:hover .chalkboard {
-background-color:blue;
+.redbox:hover .chalkboard {
+    height: 165px;
+    
+    
+    
 }
 
 /*
@@ -928,6 +982,35 @@ background-color:blue;
     
 >>>>>>> master
 >>>>>>> Stashed changes
+}
+
+.chalkboard {
+    background-image: url(../images/chalkboard_black.png);
+    background-size: cover;
+    position: absolute;
+    top: 67px;
+    width: 100%;
+    height: 0px;
+    filter: drop-shadow(20px 20px 20px #000000);
+    z-index: 80;
+    transition:.2s ease-in-out;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;   
+}
+
+.pig {
+    background-image: url(../images/pig.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    height:85%;
+    width: 85%;
+    top: 15px;
+    left: 1150px;
+    
 }
 
 /* Footer
