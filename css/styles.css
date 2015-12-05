@@ -190,11 +190,20 @@ a:link{
 text-decoration: none;
 }
 
+<<<<<<< Updated upstream
 header h1#logo{font-family: font-family: "Adelle Sans", sans-serif;
+=======
+ul li a{
+    color: #f4eedc
+}
+
+h1.logo{font-family: 'Adelle Sans',sans-serif;
+>>>>>>> Stashed changes
     font-weight: 700;
     color: #b39964;
     font-size: 9.375em;
     position: fixed;
+<<<<<<< Updated upstream
     top: 30px;
     left: 127px;
     -webkit-transition: all 0.2s;
@@ -202,6 +211,13 @@ header h1#logo{font-family: font-family: "Adelle Sans", sans-serif;
     -ms-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;
+=======
+<<<<<<< HEAD
+    top: 20px;
+=======
+    top: 10px;
+>>>>>>> master
+>>>>>>> Stashed changes
     
 }
 h2.tagline{font-family: "Adelle Sans", sans-serif;
@@ -219,6 +235,7 @@ h3.subscript{
     color: #60534d;
     font-weight: 700;
     position: fixed;
+<<<<<<< Updated upstream
     top: 137px;
     left: 285px;
     -webkit-transition: all 0.2s;
@@ -227,6 +244,16 @@ h3.subscript{
     -o-transition: all 0.2s;
     transition: all 0.2s;
     
+=======
+<<<<<<< HEAD
+    top: 140px;
+    left: 290px;    
+=======
+    top: 137px;
+    left: 290px;
+    
+>>>>>>> master
+>>>>>>> Stashed changes
 }
     
     
@@ -243,17 +270,27 @@ header{
     height: 203px;
     z-index: 100;
     background-color: black;
+<<<<<<< Updated upstream
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -ms-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s; 
+=======
+    z-index: 250;
+    
+    
+>>>>>>> Stashed changes
 }
 
 
 header .Layer_40 {
   background-image: "images/Layer_40.png";
+<<<<<<< Updated upstream
   opacity: 0.831;
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
   position: fixed;
   left: 0px;
   top: 0px;
@@ -266,6 +303,7 @@ header .Layer_40 {
   transition: all 0.2s;
 }
 
+<<<<<<< Updated upstream
 
 header .nav {
 	display:inline-flex;
@@ -280,6 +318,66 @@ header .nav a {
 	float:left;
 	margin:0px;
 	padding:22px 76.74px;
+=======
+header .subscript{
+    display:block;
+    margin:0;
+    position: relative;
+    top: -70px;
+=======
+  opacity: 0.831;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 1127px;
+  height: 300px;
+  z-index: 100;
+/*.Layer_69 {
+  background-image: url("Layer 69.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1127px;
+  height: 479px;
+  z-index: 186;
+}
+
+*/
+}
+
+.nav {
+	display:inline-flex;
+	margin-top:0px;
+>>>>>>> master
+}
+
+.nav a { 
+    border-radius:0px;
+	display:flex;
+	float:left;
+<<<<<<< HEAD
+	margin-top:0px;
+    margin-left: 40;
+=======
+	margin:0px;
+	padding:22px 75.8px;
+	text-decoration:none;
+	transition:.2s ease-in-out;
+>>>>>>> master
+}
+
+.menu { 
+    border-radius:0px;
+	display:flex;
+	float:left;
+<<<<<<< HEAD
+    margin-left: 0px;
+	padding:22.5px 75.8px;
+=======
+	margin:0px;
+	padding:22px 75.8px;
+>>>>>>> master
+>>>>>>> Stashed changes
 	text-decoration:none;
 	transition:.2s ease-in-out;
     -webkit-transition: all 0.2s;
@@ -309,12 +407,19 @@ a{
     white-space: nowrap;
 }
 
+ul li a:hover{
+    color:#b39964;
+    font-weight: 700;
+}
+
+
 header .redbox {
     background-color: #6a1916;
     position: fixed;
     left: 0px;
     top: 170px;
     width: 100%;
+<<<<<<< Updated upstream
     height: 69px;
     filter: drop-shadow(10px 10px 20px #000000);
     -webkit-transition: all 0.2s;
@@ -572,6 +677,107 @@ background-color:blue;
 .chalkboard:hover header.smaller .imgchalkboard {
     top: 137px;
 }*/
+=======
+<<<<<<< HEAD
+    height: 70px;
+    z-index: 187; 
+=======
+    height: 69px;
+    z-index: 187;
+    filter: drop-shadow(10px 10px 20px #000000);
+    
+>>>>>>> master
+}
+
+.drop,
+.drop ul,
+.drop li,
+.drop a{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+
+}
+
+.drop_features{
+    position:absolute; 
+    border-radius:0px;
+	margin:0px;
+	padding: 20px 50px;
+	text-decoration:none;
+	transition:.2s ease-in-out;
+    z-index: 201;
+}
+
+.drop_learn{
+    position:absolute; 
+    border-radius:0px;
+	display:table-column;
+	float:right;
+	margin:0px;
+    left: 190px; 
+	padding:22px 75.8px;
+	text-decoration:none;
+	transition:.2s ease-in-out;
+    z-index: 202;
+}
+
+.drop_events{
+    position:absolute; 
+    border-radius:0px;
+	display:table-column;
+	float:right;
+	margin:0px;
+    left: 400px; 
+	padding:22px 75.8px;
+	text-decoration:none;
+	transition:.2s ease-in-out;
+    z-index: 202;
+}
+.drop_reviews{
+    position:absolute; 
+    border-radius:0px;
+	display:table-column;
+	float:right;
+	margin:0px;
+    left: 600px; 
+	padding:22px 75.8px;
+	text-decoration:none;
+	transition:.2s ease-in-out;
+    z-index: 202;
+}
+
+.drop_hire_me{
+    position:absolute; 
+    border-radius:0px;
+	display:inline-block;
+	float:right;
+	margin:0px;
+    left: 800px; 
+	padding:22px 75.8px;
+	text-decoration:none;
+	transition:.2s ease-in-out;
+    z-index: 202;
+}
+
+/* drop menu animations*/
+
+.chalkboard:hover > a {
+    -webkit-transform: skewY(10deg);
+    transform: skewY(30deg);
+}
+
+.imgchalkboard{
+    position: fixed;
+    left: 0px;
+    top: 237px;
+    width: 100%;
+    height: 220px;
+    z-index: 187;
+
+}
+>>>>>>> Stashed changes
 
     
 /* Images & Media
@@ -583,7 +789,17 @@ background-color:blue;
     position: absolute;
     top: 55px;
     width: 100%;
+<<<<<<< Updated upstream
     height: 737px;    
+=======
+    height: 100%;
+<<<<<<< HEAD
+    z-index: 400;    
+=======
+    z-index: 200;
+    
+>>>>>>> master
+>>>>>>> Stashed changes
 }
 
 /* Footer
